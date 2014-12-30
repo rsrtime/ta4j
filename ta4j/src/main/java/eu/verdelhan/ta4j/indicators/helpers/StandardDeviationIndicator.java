@@ -60,6 +60,7 @@ public class StandardDeviationIndicator extends CachedIndicator<TADecimal> {
             standardDeviation = standardDeviation.plus(pow);
         }
         standardDeviation = standardDeviation.dividedBy(new TADecimal(index + 1));
+		int a =1;
         return standardDeviation.sqrt();
     }
 
